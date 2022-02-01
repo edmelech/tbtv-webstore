@@ -3,8 +3,11 @@ import { AppBar, Toolbar, IconButton, Badge, MenuItem, Menu, Typography, Icon } 
 import { ShoppingCart } from '@material-ui/icons';
 
 import logo from '../../assets/TBTV-LOGO-BLK.png'
+import useStyles from './styles';
 
 const Navbar = () => {
+const classes = useStyles();
+
   return (
     <>
       <AppBar position="fixed" className={CallMissedSharp.appBar} color="inherit">
