@@ -4,8 +4,8 @@ import { Grid }  from '@material-ui/core';
 import Product from './Product/Product';
 
 const products = [
-  {id: 1, name: 'Vinyl', description: 'Deny All - Ltd edition vinyl.', price: '£20', image: 'https://f4.bcbits.com/img/0011555650_10.jpg'},
-  {id: 2, name: 'T-shirt', description: 'TBTV LP1 Artwork T-shirt.', price: '£10', image: 'https://f4.bcbits.com/img/0024330525_10.jpg'},
+  {id: 1, name: 'Vinyl', description: 'Deny All - Ltd edition vinyl.', price: '£20', image: 'https://f4.bcbits.com/img/0024330525_10.jpg'},
+  {id: 2, name: 'T-shirt', description: 'TBTV LP1 Artwork T-shirt.', price: '£10', image: 'https://f4.bcbits.com/img/0011555650_10.jpg'},
 ]
 
 const Products = () => {
