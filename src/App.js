@@ -35,7 +35,11 @@ const App = () => {
     setCart(cart);
   }
 
-  const handle
+  const handleEmptyCart = async () => {
+    const { cart } = await commerce.cart.empty();
+
+    setCart(cart);
+  }
 
   useEffect(() => {
     fetchProducts();
@@ -50,7 +54,14 @@ const App = () => {
         <Navbar totalItems={cart.total_items} />
         <Routes>
           <Route path="/" element={<Products products={products} onAddToCart={handleAddToCart}/>}/> 
-          <Route path="/cart" element={<Cart cart={cart}/>}/>  
+          <Route path="/cart" element={
+            <Cart 
+              cart={cart}
+              handleUpdateCartQty={handleUpdateCartQty}
+              handleRemoveFromCart={handleRemoveFromCart}
+              handleEmptyCart={handleEmptyCart}
+            />
+          }/>  
         </Routes>
       </div>
     </Router>
