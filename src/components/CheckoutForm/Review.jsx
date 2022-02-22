@@ -1,5 +1,5 @@
 import React from 'react'
-import { Typography, List, ListItem, ListemText, ListItemText } from '@material-ui/core';
+import { Typography, List, ListItem, ListItemText } from '@material-ui/core';
 import { TvTwoTone } from '@material-ui/icons';
 
 const Review = ({ checkoutToken }) => {
@@ -14,7 +14,7 @@ const Review = ({ checkoutToken }) => {
           </ListItem>
         ))}
         <ListItem style={{padding: '10px 0'}}>
-          <ListemText primary="Total" />
+          <ListItemText primary="Total" />
           <Typography variant="subtitle1" style={{ fontWeight: 700 }}>
             {checkoutToken.live.subtotal.formatted_with_symbol}
           </Typography>
