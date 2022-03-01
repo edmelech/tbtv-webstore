@@ -41,7 +41,7 @@ const Checkout = ({ cart, order, onCaptureCheckout, error }) => {
     <div>
       Confirmation
     </div>
-  )
+  );
 
   const Form = () => activeStep === 0
     ? <AddressForm checkoutToken={checkoutToken} next={next} />
