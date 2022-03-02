@@ -1,6 +1,6 @@
 import React from 'react'
 import { Typography, List, ListItem, ListItemText } from '@material-ui/core';
-import { TvTwoTone } from '@material-ui/icons';
+// import { TvTwoTone } from '@material-ui/icons';
 
 const Review = ({ checkoutToken }) => {
   return (
