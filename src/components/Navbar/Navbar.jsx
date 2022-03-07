@@ -16,7 +16,6 @@ const Navbar = ({ totalItems }) => {
         <Toolbar>
           <Typography component={Link} to="/" variant="h6" className={classes.title} color="inherit">
             <img src={logo} alt="Tbtv-store.js" height="50px" className={classes.image} />
-            TBTVstore.js
           </Typography>
           <div className={classes.grow} />
           {location.pathname === '/' && (
