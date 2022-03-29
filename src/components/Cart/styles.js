@@ -21,7 +21,7 @@ export default makeStyles((theme) => ({
     textDecoration: 'none',
   },
   cardDetails: {
-    display: 'flex',
+    // display: 'flex',
     justifyContent: 'space-between',
     marginTop: '10%',
     width: '100%',
